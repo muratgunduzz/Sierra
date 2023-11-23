@@ -1,26 +1,16 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Sierra.Models;
+using System.Data.SqlClient;
 
 namespace Sierra.Controllers
 {
     public class BMEmployeeController : Controller
     {
-        //index actions
+        //[Authorize(Roles = "Admin")]
         public IActionResult Index()
         {
             return View();
-        }
-        public IActionResult Show(string[] elementShow) 
-        {
-            int check = 0;
-            if(elementShow != null)
-            {
-                check = 1;
-            }
-            var response = new
-            {
-                Check = check,
-            };
-            return Json(response);
         }
         //BMSyestem actions
         public IActionResult BMSystem()
