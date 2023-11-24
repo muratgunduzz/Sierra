@@ -243,3 +243,102 @@ p{
     margin-left: 42%;
     margin-top: 24px;
 }
+/*HQ*/
+
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 1);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: orangered;
+    font-size: 60px;
+    z-index: 9999;
+}
+
+.hq-background-image {
+    background-image: url(https://steamuserimages-a.akamaihd.net/ugc/2066630625091560096/92510C413B798073EB0CE0C22240650CDE2F65B5/?imw=512&amp;imh=288&amp;ima=fit&amp;impolicy=Letterbox&amp;imcolor=%23000000&amp;letterbox=true);
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    filter: blur(1px);
+    filter: brightness(0.5);
+}
+
+.hq-employeesystem-link{
+    list-style:none;
+    text-decoration: none;
+    color:grey;
+    font-size: 24px;
+    font-weight:bolder;
+    margin:30px;
+}
+
+.hq-employeesystem-link:hover{
+    filter:blur(1px);
+}
+
+.hq-navbar-loogout {
+    list-style: none;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    position: fixed;
+    top: 0; 
+    right: 10px;
+    margin: 20px;
+}
+
+/*Employee System*/
+
+.employee-system-background-image {
+    background-image: url(https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700911932.jpg);
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    filter: blur(1px);
+    filter: brightness(0.5);
+}
+
+.employee-system-table{
+    text-align: center;
+    margin: 30px;
+}
+
+.employee-system-table th {
+    color: white;
+    font-size:18px;
+}
+
+.employee-system-table td {
+    color: yellow;
+    font-size:15px;
+}
+
+.employee-system-table button{
+    background-color:transparent;
+    border-radius:3px;
+    color:white;
+    font-weight:bolder;
+}
+
+.employee-system-table th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd
+}

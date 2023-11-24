@@ -1,5 +1,4 @@
-﻿
-function ShowElement() {
+﻿function ShowElement() {
     var target = "/Login/Index"
     window.location.href = target;
 }
@@ -22,3 +21,6 @@ function login() {
         },
     })
 }
+//looglama, Nlog, seriLog, logFornet
+//orm çeşitleri database bağlantıları için depper ve entity framework core bunlar içnde class
+//orm ler için dataaccess klasör enty ve depper için ayrı base interface orda yazdıklarını oradan türet

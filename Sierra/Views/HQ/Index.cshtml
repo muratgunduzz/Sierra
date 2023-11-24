@@ -1,1 +1,35 @@
-﻿
+﻿@{
+    Layout = null;
+}
+
+<link href="~/css/site.css" rel="stylesheet" />
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="~/js/hq/hq.js"></script>
+
+<div id="overlay">
+    <div id="overlayText">Welcome Dr. Breen</div>
+</div>
+
+<div class="hq-background-image"></div>
+
+<nav class="hq-navbar">
+    <ul>
+        <li>
+            <a class="hq-navbar-loogout" asp-area="" asp-controller="BMEmployee" asp-action="Index">Log Out</a>
+        </li>
+    </ul>
+</nav>
+
+<div>
+    <a class="hq-employeesystem-link" href="~/EmployeeSystem">Employee System</a>
+</div>
+
+<div class="hq-news-content">
+    <h1>Black Mesa Today</h1>
+    <h2></h2>
+    <div>
+        <p></p>
+        <a><i></i></a>
+    </div>
+</div>
+

@@ -1,1 +1,41 @@
-﻿
+﻿@{
+    Layout = null;
+}
+
+<script src="/js/"></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<link href="~/css/site.css" rel="stylesheet" />
+
+@model List<BMEmployee>
+
+<div class="employee-system-background-image"></div>
+<div>
+    <table class="employee-system-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Surname</th>
+                <th>Password</th>
+                <th>Sector</th>
+                <th>Level</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (var employee in Model)
+            {
+                <tr>
+                    <td>@employee.ID</td>
+                    <td>@employee.Name</td>
+                    <td>@employee.Surname</td>
+                    <td>@employee.PassWord</td>
+                    <td>@employee.Sector</td>
+                    <td>@employee.Level</td>
+                    <td><button onclick="Edit()">Edit</button></td>
+                    <td><button onclick="Delete()">Delete</button></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

@@ -37,7 +37,7 @@ public class LoginController : Controller
                                 return RedirectToAction("Index","HQ");
                             }
                         }
-                        return RedirectToAction("Index", "Login");
+                        return RedirectToAction("Index", "EmployeeSystem");
                     }
                     else
                     {

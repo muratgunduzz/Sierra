@@ -9,12 +9,4 @@ $(".bmemployee-index-login-button").click(function () {
 // element show
 
 // login check
-function Login() {
-    var ID = $("#ID").val();
-    var Password = $("#Password").val();
-    login = login.push(ID, Password);
-    $.ajax({
-        type: "POST",
-        url: ""
-    })
-}
+
